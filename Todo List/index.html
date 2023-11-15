@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dc54593ae1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="big-container">
+        <div class="todo-name">
+            <h3>To Do List</h3>
+        </div>
+        <div class="todo-input">
+            <table class="middle">
+                <tr>
+                    <td><input type="text" placeholder=" Add New Task" class="new-task"></td>
+                    <td><i class="fa-solid fa-circle-check greenbtn" ></i></td>
+                </tr>
+                <tr>
+                    <td><span class="error-span"></span></td>
+                </tr>
+            </table>
+        </div>
+        <div class="line"></div>
+
+        <div class="task-list">
+            <ul class="ul">
+                <li>Go to Gym <i class="fa-solid fa-circle-minus delete"></i></li>
+                <li>Watch Tiger-3 <i class="fa-solid fa-circle-minus delete"></i></li>
+                <li>Vote to Congress <i class="fa-solid fa-circle-minus delete"></i></li>
+
+            </ul>
+        </div>
+        <span class="empty"></span>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
