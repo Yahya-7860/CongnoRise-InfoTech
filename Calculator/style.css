@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=EB+Garamond:wght@600&family=Open+Sans:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+.big-container{
+    background-image: linear-gradient(to top,rgb(251, 203, 119),rgb(221, 221, 221));
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.calculator-content{
+    background-color: black;
+    width: 23%;
+    height: 50rem;
+    border-radius: 2rem;
+    margin: auto;
+    position: relative;
+    top:5rem;    
+    box-shadow:.3rem .2rem 1rem 0.2rem rgb(74, 71, 71);
+}
+.upper{
+    border-bottom: .1rem solid rgba(255, 255, 255, 0.437);
+    height: 35%;
+    margin-bottom: 1.2rem;
+    
+}
+.lower{
+    color: white;
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    margin-left: 2rem;
+}
+.lower .button button{
+    background-color: gray;
+    border-radius: 100rem;
+    padding: 1rem;
+    width: 5rem;
+    margin: .5rem 0;
+    margin-left: -1.5rem;
+    font-weight: 900;
+    font-size: 2.2rem;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    cursor:pointer;
+}
+.display{
+    font-size: 5rem;
+}
+.lower .button .one{
+    color: black;
+    background-image: linear-gradient( rgb(224, 223, 223), rgb(208, 208, 208));
+}
+.lower .button .one:hover{
+    background-image: linear-gradient( rgb(237, 237, 237), rgb(237, 237, 237));
+}
+.lower .button .one:active{
+    background-image: linear-gradient( rgb(161, 161, 161), rgb(161,161,161))}
+
+
+.lower .button .two{
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgb(77, 77, 77),rgb(57, 57, 57));
+}
+.lower .button .two:hover{
+    background-image: linear-gradient(rgb(97, 97, 97),rgb(97, 97, 97));
+}
+.lower .button .two:active{
+    background-image: linear-gradient(rgb(58, 58, 58),rgb(57, 57, 57));
+}
+
+
+.lower .button .three{
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgb(255, 166, 0),rgb(214, 139, 0));
+}
+.lower .button .three:hover{
+    background-image: linear-gradient(rgb(255, 175, 27),rgb(255, 174, 24));
+}
+.lower .button .three:active{
+    background-image: linear-gradient(rgb(207, 135, 0),rgb(206, 134, 0));
+}
+
+
+.col-span{
+    grid-column: span 2;
+}
+.lower .button .span{
+    width: 90%;
+}
+
+.upper{
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 0 1.5rem;
+    font-size: 4rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.fade-content{
+    width: 22%;
+    margin: auto;
+    text-align: right;
+    position: absolute;
+    top: 14rem;
+    left: 50rem;
+    z-index: 100;
+    overflow: hidden;
+}
+.fade{
+    font-size: 2.2rem;
+    margin-right: 1rem;
+    color: rgb(180, 180, 180);    
+}
